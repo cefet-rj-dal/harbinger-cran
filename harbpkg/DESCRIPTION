@@ -1,0 +1,10 @@
+Package: harbpkg
+Type: Package
+Title: Pacote do Harbinger
+Version: 0.1.0
+Author: Eduardo Freitas Moura Diogo Conde Soler Teixeira Dos Santos 
+Maintainer: <eduardofreitasmoura@gmail.com>
+Description: Criou-se um pacote para o harbinger afim de facilitar o uso de suas funções.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
