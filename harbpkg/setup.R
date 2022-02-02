@@ -43,4 +43,14 @@ available("harbpkg") "esse nome procede"
 # create_package("path/to/package/pkgname")
 # load_all(), test(), and check().
 
+write('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', file = "~/.Renviron", append = TRUE)
+
+Sys.which("make")
+
+install.packages("C:/Users/eduar/Documents/harbpkg", repos=NULL, type="source")
+install.packages("harbpkg", type = "source")
+library("harbpkg")
+.libPaths()
+
+
 
