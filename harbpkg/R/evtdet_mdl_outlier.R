@@ -1,3 +1,15 @@
+#==== evdet_mdl_outlier: Função para detecção de eventos ====
+# Nesse outlier, é feito o uso de MDL (Minimum description length),
+# fazendo com que os cálculos feitos irão possuir uma variação maior (desvio padrão maior). Esse método ajuda a encontrar pontos
+# divergentes usando outliers que podem ser tratados como anomalias.
+# input:
+#   data: data.frame com uma ou mais variáveis (série temporal) onde a primeira referência tempo.
+# output:
+#   events --> data.frame com output de evtdet(data, mdl_outlier):
+#               tempo (indíces ou tempo de evento),
+#               série (correspondente a uma série temporal) e
+#               tipo (tipo do evento) como output.
+
 evtdet.mdl_outlier <- function(data,...){
   if(is.null(data)) stop("No data was provided for computation",call. = FALSE)
 
