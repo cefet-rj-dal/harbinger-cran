@@ -1,3 +1,11 @@
+#==== plot: Função para projeção de detecção de eventos ====
+# input:
+#   dados: data.frame com uma ou mais variáveis (série temporal) onde a primeira variável se refere ao tempo.
+#   eventos: output da função 'evtdet' em relação a uma série temporal específica.
+#   referência: data.frame do mesmo comprimento que a série temporal com duas variáveis: tempo, evento (booleano indicando eventos verdadeiros)
+# output:
+#   projeção.
+
 #==== plot: Function for plotting event detection ====
 # input:
 #   data: data.frame with one or more variables (time series) where the first variable refers to time.
