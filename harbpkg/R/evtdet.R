@@ -1,9 +1,9 @@
 #==== evtdet: Função para detecção de eventos ====
 # Função fundamental do pacote. Normalmente, não é chamada diretamente mas pode ser usada para integrar novos métodos.
 # input:
-#   data: data.frame com uma ou mais variáveis (série temporal) onde a primeira referência tempo.
+#   data: data.frame com uma ou mais variáveis (série temporal) onde a primeira referencia tempo.
 #   func: função para detecção de eventos tendo 'data' como input e um data.frame com 3 variáveis:
-#         tempo (indíces ou tempo de evento), série (correspondente a uma série temporal) e
+#         tempo (índices ou tempo de evento), série (correspondente a uma série temporal) e
 #    tipo (tipo do evento) como output.
 #
 # output:
