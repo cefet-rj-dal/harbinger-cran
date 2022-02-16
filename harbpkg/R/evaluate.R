@@ -1,3 +1,11 @@
+#==== evaluate: Função para avaliar qualidade de detecção de eventos ====
+# input:
+#   eventos: output da função 'evtdet' relativa a uma série temporal particular.
+#   referência: data.frame do mesmo comprimento que a série temporal com duas variáveis: tempo, evento (booleano indicando eventos verdadeiros)
+#
+# output:
+#   valor métrico calculado.
+
 #==== evaluate: Function for evaluating quality of event detection ====
 # input:
 #   events: output from 'evtdet' function regarding a particular times series.
