@@ -2,13 +2,12 @@ Package: harbinger
 Type: Package
 Title: Pacote do Harbinger
 Version: 0.1.0
-Author: Rebecca Salles, Luciana Escobar, Lais Baroni, Roccio Zorrilla,Artur Ziviani, 
-        Vinicius Kreischer, Flavia C. Delicato, Paulo F. Pires,Luciano Maia, Rafaelli Coutinho, 
-        Laura Assis, Eduardo Moura, Diogo Conde, Eduardo Ogasawara
+Author: Rebecca Salles, Luciana Escobar, Lais Baroni, Rafaelli Coutinho,
+        Laura Assis, Janio de Souza, Eduardo Moura, Diogo Conde, Eduardo Ogasawara
 Maintainer: <{rebecca.salles,luciana.vignoli,lais.baroni}@eic.cefet-rj.br> 
 Description: Criou-se um pacote R para o framework harbinger afim de facilitar o uso de suas funções. O Harbinger é um framework para integração 
              e análise de métodos de detecção de eventos em séries temporais
-License: What license is it under?
+License:  GPL-2 | GPL-3 [expanded from: GPL (≥ 2)]
 Encoding: UTF-8
 LazyData: true
 
