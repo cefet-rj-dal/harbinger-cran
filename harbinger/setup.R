@@ -47,9 +47,9 @@ write('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', file = "~/.Renviron", append 
 
 Sys.which("make")
 
-install.packages("C:/Users/eduar/Documents/harbpkg", repos=NULL, type="source")
-install.packages("harbpkg", type = "source")
-library("harbpkg")
+install.packages("C:/Users/eduar/Documents/harbinger", repos=NULL, type="source")
+install.packages("harbinger", type = "source")
+library("harbinger")
 .libPaths()
 
 
