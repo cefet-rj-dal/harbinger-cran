@@ -5,8 +5,9 @@ Version: 0.1.0
 Author: Rebecca Salles, Luciana Escobar, Lais Baroni, Roccio Zorrilla,Artur Ziviani, 
         Vinicius Kreischer, Flavia C. Delicato, Paulo F. Pires,Luciano Maia, Rafaelli Coutinho, 
         Laura Assis, Eduardo Moura, Diogo Conde, Eduardo Ogasawara
-Maintainer: <eduardofreitasmoura@gmail.com> <{rebecca.salles,luciana.vignoli,lais.baroni}@eic.cefet-rj.br>
-Description: Criou-se um pacote R para o framework harbinger afim de facilitar o uso de suas funções.
+Maintainer: <{rebecca.salles,luciana.vignoli,lais.baroni}@eic.cefet-rj.br> 
+Description: Criou-se um pacote R para o framework harbinger afim de facilitar o uso de suas funções. O Harbinger é um framework para integração 
+             e análise de métodos de detecção de eventos em séries temporais
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
