@@ -1,9 +1,9 @@
-#==== evdet_otsad: Função para detecção de eventos ====
-#   Otsad é um método de detecção de eventos que consiste em avaliar o dataframe e marcar anomalias
-# implementando algoritmos detectores de falhas para séries temporais do pacote otsad.
+#==== evdet_otsad: Function for event detection ====
+#   Otsad is a events detection method that consist in evaluating a dataframe and mark anomalies for a
+#   time series, implementing some flaw detector algorithms from the otsad package
 # input:
-#   data: data.frame com uma ou mais variáveis (série temporal) onde a primeira referência tempo.
-
+#   data: data.frame with one or more variables (time series) where the first variable refers to time.
+#   method: the selected event detection method from the otsad package (Example: "CpPewma")
 
 
 evtdet.otsad <- function(data,...){

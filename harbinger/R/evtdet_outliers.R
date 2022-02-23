@@ -1,8 +1,9 @@
-#==== evdet_outliers: Função para detecção de eventos ====
-# Outliers é um método de detecção de eventos que consiste em avaliar o dataframe e marcar anomalias
-# baseando-se em comparações dos valores do data.frame entre si.
+#==== evdet_outliers: Function for event detection ====
+# Outliers is a event detection method that consist in evaluating a data.frame and mark anomalies
+# basing itself in comparisons between the values of the data.frame.
 # input:
-#   data: data.frame com uma ou mais variáveis (série temporal) onde a primeira referência tempo.
+#   data: data.frame with one or more variables (time series) where the first variable refers to time.
+#   alpha:
 
 
 evtdet.outliers <- function(data,...){

@@ -1,9 +1,16 @@
-#==== evdet_eventdetect: Função para detecção de eventos ====
-#   eventdetect é um método de detecção de eventos que consiste em avaliar o dataframe e marcar anomalias
-# implementando algoritmos do pacote EventDetectR. Esse pacote simula, detecta e classifica dados de séries temporais.
+#==== evdet_eventdetect: Function for event detection ====
+#   eventdetect is a event detection method that consist in evaluating a dataframe and marking anomalies in the process, using
+#   implemented algorithms from the EventDetectR package. This package can simulate, detect and classify data of a time series.
 # input:
-#   data: data.frame com uma ou mais variáveis (série temporal) onde a primeira referência tempo.
-
+#   data: data.frame with one or more variables (time series) where the first variable refers to time.
+# Not necessary for input:
+#   windowSize: define the size of the window. Default value = 200
+#   nIterationsRefit: number of interactions. Default value = 150
+#   dataPrepators:  prepare data. Default value = "ImputeTSInterpolation"
+#   buildModelAlgo: model builder. Default value = "ForecastBats"
+#   postProcessors: post processors. Default value = "bedAlgo"
+#   postProcessorControl: Control of post. Default value = list(nStandardDeviationsEventThreshhold = 5)
+#
 
 evtdet.eventdetect <- function(data,...){
   if(is.null(data)) stop("No data was provided for computation",call. = FALSE)

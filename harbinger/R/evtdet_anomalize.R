@@ -1,8 +1,14 @@
-#==== evdet_anomalize: Função para detecção de eventos ====
-# Anomalize é um método de detecção de eventos que consiste em avaliar o dataframe e marcar anomalias
-# baseando-se em métodos de decomposição.
+#==== evdet_anomalize: Function for event detection  ====
+# Anomalizeis a events detection method that consist in evaluating and marking anomalies
+# basing itself on decomposition methods.
 # input:
-#   data: data.frame com uma ou mais variáveis (série temporal) onde a primeira referência tempo.
+#   data: data.frame with one or more variables (time series) where the first variable refers to time.
+#   method_time_decompose: selected decomposition method. Default value:
+#   frequency: frequency type mode. Default value: "auto"
+#   trend:  trend type mode. Default value: "auto"
+#   method_anomalize: anomalize method. Default value: "iqr"
+#   alpha: alpha value. Default value: 0.05
+#   max_anoms: maximum of anomalies. Default value: 0.2
 
 evtdet.anomalize <- function(data,...){
   if(is.null(data)) stop("No data was provided for computation",call. = FALSE)

@@ -1,9 +1,11 @@
-#==== evdet_mdl_outlier: Função para detecção de eventos ====
-# Nesse outlier, é feito o uso de MDL (Minimum description length),
-# fazendo com que os cálculos feitos irão possuir uma variação maior (desvio padrão maior). Esse método ajuda a encontrar pontos
-# divergentes usando outliers que podem ser tratados como anomalias.
+#==== evdet_mdl_outlier: Function for event detection ====
+# In this outlier (Model Outliers method), it is used the model (mdl) as a parameter.
+# The value of this parameter is a linear regression. In general, this method helps to
+# find divergences points using outliers which can be treated as anomalies.
 # input:
-#   data: data.frame com uma ou mais variáveis (série temporal) onde a primeira referência tempo.
+#   data: data.frame with one or more variables (time series) where the first variable refers to time.
+#   mdl: model.
+#   alpha: aplha value.
 
 
 evtdet.mdl_outlier <- function(data,...){
