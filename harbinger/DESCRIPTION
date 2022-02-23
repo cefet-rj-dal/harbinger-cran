@@ -2,9 +2,11 @@ Package: harbinger
 Type: Package
 Title: Pacote do Harbinger
 Version: 0.1.0
-Author: Eduardo Freitas Moura, Diogo Conde Soler Teixeira Dos Santos
-Maintainer: <eduardofreitasmoura@gmail.com>
-Description: Criou-se um pacote para o harbinger afim de facilitar o uso de suas funções.
+Author: Rebecca Salles, Luciana Escobar, Lais Baroni, Roccio Zorrilla,Artur Ziviani, 
+        Vinicius Kreischer, Flavia C. Delicato, Paulo F. Pires,Luciano Maia, Rafaelli Coutinho, 
+        Laura Assis, Eduardo Moura, Diogo Conde, Eduardo Ogasawara
+Maintainer: <eduardofreitasmoura@gmail.com> <{rebecca.salles,luciana.vignoli,lais.baroni}@eic.cefet-rj.br>
+Description: Criou-se um pacote R para o framework harbinger afim de facilitar o uso de suas funções.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
