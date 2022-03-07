@@ -1,11 +1,11 @@
 #==== evdet_mdl_outlier: Function for event detection ====
-# In this outlier (Model Outliers method), it is used the model (mdl) as a parameter.
+# In this outlier (Model Outliers method), the model (mdl) is used as a parameter.
 # The value of this parameter is a linear regression. In general, this method helps to
-# find divergences points using outliers which can be treated as anomalies.
+# find divergence points using outliers which can be treated as anomalies.
 # input:
 #   data: data.frame with one or more variables (time series) where the first variable refers to time.
 #   mdl: model.
-#   alpha: aplha value.
+#   alpha: alpha value.
 
 
 evtdet.mdl_outlier <- function(data,...){
