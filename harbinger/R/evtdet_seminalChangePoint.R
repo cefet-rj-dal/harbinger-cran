@@ -4,6 +4,14 @@
 #quantity of adjustment errors that occur throughout the region. The areas with 
 #most errors are compared with the ones where this rate is the lowest.
 #input:
+# w (window size) dafault value=100 
+# alpha default value=1.5
+# na.action default value=na.omit
+# deparse.level default value=0
+# mdl (error on whole window) default value=err
+# mdl_ad (error on window halves) default value=err_ad
+# mdl_dif (error difference) default value=err-err_ad
+
 evtdet.seminalChangePoint <- function(data,...){
   if(is.null(data)) stop("No data was provided for computation",call. = FALSE)
 
