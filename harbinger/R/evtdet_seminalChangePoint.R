@@ -1,3 +1,9 @@
+#==== evtdet_seminalChangePoint: Function for event detection  ====
+#For any given point in time, models are adjusted to segments of data around that 
+#point. Then, the existence of a change point is determined depending on the 
+#quantity of adjustment errors that occur throughout the region. The areas with 
+#most errors are compared with the ones where this rate is the lowest.
+#input:
 evtdet.seminalChangePoint <- function(data,...){
   if(is.null(data)) stop("No data was provided for computation",call. = FALSE)
 
