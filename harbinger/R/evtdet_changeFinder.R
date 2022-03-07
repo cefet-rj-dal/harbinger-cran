@@ -9,7 +9,10 @@
 #using the learned deviance model.This way, the detection of change points 
 #is reduced to the question of finding anomalies in a series.
 #input:
-
+#   mdl (model)
+#   m (size of mobile mean) dafault value=5
+#   alpha (alpha value) default value=3 
+#   na.action default value="na.omit"
 evtdet.changeFinder <- function(data,...){
   if(is.null(data)) stop("No data was provided for computation",call. = FALSE)
 
