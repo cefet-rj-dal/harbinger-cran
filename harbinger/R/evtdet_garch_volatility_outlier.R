@@ -1,3 +1,8 @@
+#==== evtdet.garch_volatility_outlier: Function for event detection  ====
+#The models of the GARCH type consist of the estimated volatility based on past 
+#observations. It is a non-linear time series model that is used to treat the 
+#non-linearity of data. It can be used to study the volatility of time series.
+#input:
 evtdet.garch_volatility_outlier <- function(data,...){
   if(is.null(data)) stop("No data was provided for computation",call. = FALSE)
 
