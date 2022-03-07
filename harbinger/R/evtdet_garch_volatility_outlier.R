@@ -3,6 +3,13 @@
 #observations. It is a non-linear time series model that is used to treat the 
 #non-linearity of data. It can be used to study the volatility of time series.
 #input:
+#   data: data.frame with one or more variables (time series) where the first variable refers to time.
+#   alpha: alpha value. default value="1.5"
+#   distribution.model (conditional density model)
+#   variance.model
+#   mean.model
+#   na.action default value="na.omit"
+
 evtdet.garch_volatility_outlier <- function(data,...){
   if(is.null(data)) stop("No data was provided for computation",call. = FALSE)
 
