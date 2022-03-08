@@ -1,4 +1,8 @@
 #==== evtplot: Function for plotting event detection ====
+# The evtplot function is used to plot the detection of events made with one of the available event
+# detection functions. It helps the comprehension the results obtained though the detection, as it 
+# visually shows them.
+#
 # input:
 #   data: data.frame with one or more variables (time series) where the first variable refers to time.
 #   events: output from 'evtdet' function regarding a particular times series.
