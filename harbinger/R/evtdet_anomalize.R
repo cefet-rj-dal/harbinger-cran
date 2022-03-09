@@ -1,6 +1,7 @@
 #==== evdet_anomalize: Function for event detection  ====
-# Anomalize is an events detection method that consists of evaluating and marking anomalies
+# Anomalize is an event detection method that consists of evaluating and marking anomalies,
 # basing itself on decomposition methods.
+#
 # input:
 #   data: data.frame with one or more variables (time series) where the first variable refers to time.
 #   method_time_decompose: selected decomposition method. Default value:
