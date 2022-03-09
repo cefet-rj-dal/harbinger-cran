@@ -12,9 +12,9 @@
 # input:
 #   data: data.frame with one or more variables (time series) where the first variable refers to time.
 #   events: output from 'evtdet' function regarding a particular times series.
-#   reference(optional): data.frame of the same length as the time series with two variables: time, 
+#   reference (optional): data.frame of the same length as the time series with two variables: time, 
 #   event (boolean indicating true events).
-#   mark.cp (optional): mark symbol. Same use as R plot function.
+#   mark.cp: (value equals TRUE) displays a dashed vertical line at detected change points. Default value = FALSE.
 #   ylim (optional): y axis limit. Same use as R plot function.
 #
 # output: 
