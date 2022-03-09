@@ -9,10 +9,6 @@
 #   w (window size). Default value= 100 
 #   alpha: alpha value. Default value= 1.5
 #   na.action. Default value= "na.omit"
-#   deparse.level. Default value= 0
-#   mdl(model): error on whole window. Default value= "err"
-#   mdl_ad: error on window halves. Default value= "err_ad"
-#   mdl_dif: error difference. Default value= "err-err_ad"
 
 evtdet.seminalChangePoint <- function(data,...){
   if(is.null(data)) stop("No data was provided for computation",call. = FALSE)
