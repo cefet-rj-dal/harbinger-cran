@@ -5,13 +5,13 @@
 #
 # input:
 #   data: data.frame with one or more variables (time series) where the first variable refers to time.
-#   alpha: alpha value. default value=3.0
-#   distribution.model (conditional density model) default value="normal distribution"
-#   variance.model model ="sGARCH"
-#   variance.model garchOrder = (1, 1)
-#   mean.model armaOrder = (1, 1)
-#   mean.model include.mean = TRUE
-#   na.action default value="na.omit"
+#   alpha: alpha value. Default value= 3.0
+#   distribution.model: conditional density model. Default value= "normal distribution"
+#   variance.model. Default value:model = "sGARCH"
+#   variance.model. Default value:garchOrder = (1, 1)
+#   mean.model. Default value:armaOrder = (1, 1)
+#   mean.model. Default value:include.mean = "TRUE"
+#   na.action. Default value= "na.omit"
 
 evtdet.garch_volatility_outlier <- function(data,...){
   if(is.null(data)) stop("No data was provided for computation",call. = FALSE)
