@@ -3,15 +3,19 @@
 # non-linear time series model that is used to treat the non-linearity of data. It can be used to study 
 # the volatility of time series.
 #
-# input:
+# general input:
 #   data: data.frame with one or more variables (time series) where the first variable refers to time.
-#   alpha: alpha value. Default value= 1.5
-#   distribution.model: conditional density model. Default value= "normal distribution"
-#   variance.model. Default value:model = "sGARCH"
-#   variance.model. Default value:garchOrder = (1, 1)
-#   mean.model. Default value:armaOrder = (1, 1)
-#   mean.model. Default value:include.mean = "TRUE"
 #   na.action. Default value= "na.omit"
+# method specific input:
+#   alpha: alpha value. Default value= 1.5  
+#   spec (specifications):
+#      distribution.model: conditional density model. Default value= "norm" (normal distribution)
+#      variance.model. Default value for model = "sGARCH"
+#                      Default value for garchOrder = (1, 1)
+#      mean.model. Default value for include.mean = "TRUE"
+#                  Default value:armaOrder = (1, 1)
+#                  Default value:include.mean = "TRUE"
+#   
 
 evtdet.garch_volatility_outlier <- function(data,...){
   if(is.null(data)) stop("No data was provided for computation",call. = FALSE)
