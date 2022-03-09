@@ -5,7 +5,7 @@
 #
 # input:
 #   data: data.frame with one or more variables (time series) where the first variable refers to time.
-#   alpha: alpha value. Default value= 3.0
+#   alpha: alpha value. Default value= 1.5
 #   distribution.model: conditional density model. Default value= "normal distribution"
 #   variance.model. Default value:model = "sGARCH"
 #   variance.model. Default value:garchOrder = (1, 1)
