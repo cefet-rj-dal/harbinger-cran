@@ -1,10 +1,21 @@
 #==== evaluate: Function for evaluating quality of event detection ====
+# The evaluate function uses a diverse number of metrics for the analysis of the 
+# quality of the many event detection methods. Among these metric, are true positive, false positive, true negative e false negative, which
+#onfusion matrix, accuracy,
+#                   sensitivity=sensitivity, specificity=specificity,
+ #                  prevalence=prevalence, PPV=PPV, NPV=NPV,
+ #                  detection_rate=detection_rate, detection_prevalence=detection_prevalence,
+ #                  balanced_accuracy=balanced_accuracy, precision=precision,
+#                   recall=recall, F1=F1)
+#
 # input:
 #   events: output from 'evtdet' function regarding a particular times series.
 #   reference: data.frame of the same length as the time series with two variables: time, event (boolean indicating true events)
 #
 # output:
 #   calculated metric value.
+
+
 evaluate <- function(events, reference,
                      metric=c("confusion_matrix","accuracy","sensitivity","specificity","pos_pred_value","neg_pred_value","precision",
                               "recall","F1","prevalence","detection_rate","detection_prevalence","balanced_accuracy"), beta=1){
