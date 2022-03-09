@@ -1,12 +1,8 @@
 #==== evaluate: Function for evaluating quality of event detection ====
-# The evaluate function uses a diverse number of metrics for the analysis of the 
-# quality of the many event detection methods. Among these metric, are true positive, false positive, true negative e false negative, which
-#onfusion matrix, accuracy,
-#                   sensitivity=sensitivity, specificity=specificity,
- #                  prevalence=prevalence, PPV=PPV, NPV=NPV,
- #                  detection_rate=detection_rate, detection_prevalence=detection_prevalence,
- #                  balanced_accuracy=balanced_accuracy, precision=precision,
-#                   recall=recall, F1=F1)
+# The evaluate function uses a diverse number of metrics for the analysis of the quality of the many event detection methods. 
+# Among these metric, are: true positive, false positive, true negative e false negative, which all compose the confusion matrix; 
+# accuracy, which is the ratio between the number of true forecasts and total observations; sensitivity; specificity; prevalence; 
+# pos_pred_value; neg_pred_value; detection rate; detection prevalence; balanced accuracy; precision; recall and F1.             
 #
 # input:
 #   events: output from 'evtdet' function regarding a particular times series.
