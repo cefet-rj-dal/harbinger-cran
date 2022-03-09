@@ -7,6 +7,9 @@
 #   data: data.frame with one or more variables (time series) where the first variable refers to time.
 #   events: output from 'evtdet' function regarding a particular times series.
 #   reference: data.frame of the same length as the time series with two variables: time, event (boolean indicating true events)
+#
+# output: 
+#   plotted event detection
 
 
 evtplot <- function(data, events, reference=NULL, mark.cp=FALSE, ylim=NULL,...){
