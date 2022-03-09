@@ -3,8 +3,7 @@
 # basing itself in comparisons between the values of the data.frame.
 # input:
 #   data: data.frame with one or more variables (time series) where the first variable refers to time.
-#   alpha:
-
+#   alpha: alpha value. Default value= "1.5"
 
 evtdet.outliers <- function(data,...){
 
