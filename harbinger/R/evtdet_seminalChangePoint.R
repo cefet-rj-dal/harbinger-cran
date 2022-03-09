@@ -1,16 +1,18 @@
-#==== evtdet_seminalChangePoint: Function for event detection  ====
-#For any given point in time, models are adjusted to segments of data around that 
-#point. Then, the existence of a change point is determined depending on the 
-#quantity of adjustment errors that occur throughout the region. The areas with 
-#most errors are compared with the ones where this rate is the lowest.
-#input:
-# w (window size) dafault value=100 
-# alpha default value=1.5
-# na.action default value=na.omit
-# deparse.level default value=0
-# mdl (error on whole window) default value=err
-# mdl_ad (error on window halves) default value=err_ad
-# mdl_dif (error difference) default value=err-err_ad
+# ==== evtdet_seminalChangePoint: Function for event detection  ====
+# For any given point in time, models are adjusted to segments of data around that 
+# point. Then, the existence of a change point is determined depending on the 
+# quantity of adjustment errors that occur throughout the region. The areas with 
+# most errors are compared with the ones where this rate is the lowest.
+#
+# input:
+#   data: data.frame with one or more variables (time series) where the first variable refers to time.
+#   w (window size) dafault value=100 
+#   alpha default value=1.5
+#   na.action default value="na.omit"
+#   deparse.level default value=0
+#   mdl (error on whole window) default value="err"
+#   mdl_ad (error on window halves) default value="err_ad"
+#   mdl_dif (error difference) default value="err-err_ad"
 
 evtdet.seminalChangePoint <- function(data,...){
   if(is.null(data)) stop("No data was provided for computation",call. = FALSE)
