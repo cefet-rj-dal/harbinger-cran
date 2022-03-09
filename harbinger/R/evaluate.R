@@ -7,8 +7,8 @@
 # input:
 #   events: output from 'evtdet' function regarding a particular times series.
 #   reference: data.frame of the same length as the time series with two variables: time, event (boolean indicating true events)
-#   metric: evaluation methods based on calculation that involve both the events detected, whether corretly or not, and their 
-#   total number.
+#   metric: String related to the evaluation metrics based on calculation that involve both the events detected, whether corretly 
+#   or not, and their total number. Default values do not exist.
 #   beta: beta value. Default value= 1
 #
 # output:
