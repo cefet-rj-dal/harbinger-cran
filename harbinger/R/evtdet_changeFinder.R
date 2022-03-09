@@ -1,18 +1,18 @@
 #==== evtdet_changeFinder: Function for event detection  ====
-#In this method, there are two steps: first, the anomalies are detected. An incremental 
-#learning model is adjusted to the series. A score is then given for every observation. 
-#The score is calculated through its notions of learned model deviance, based on 
-#quadratic errors. Higher scores mean anomalies. In the second and final step,
-#the change points are identified. A new time series is produced, consisting 
-#of the scores' mobile means obtained in the first step. For the second time, a new 
-#incremental learning model is adjusted to the new series and a score given 
-#using the learned deviance model.This way, the detection of change points 
-#is reduced to the question of finding anomalies in a series.
-#input:
-#   mdl (model) default value="linear regression"
-#   m (moving average size) dafault value=90
-#   alpha (alpha value) default value=3 
-#   na.action default value="na.omit"
+# In this method, there are two steps: first, the anomalies are detected. An incremental learning model is adjusted to 
+# the series. A score is then given for every observation. The score is calculated through its notions of learned model 
+# deviance, based on quadratic errors. Higher scores mean anomalies. In the second and final step,the change points are 
+# identified. A new time series is produced, consisting of the scores' mobile means obtained in the first step. For the 
+# second time, a new incremental learning model is adjusted to the new series and a score given using the learned deviance 
+# model.This way, the detection of change points is reduced to the question of finding anomalies in a series.
+#
+# input:
+#   data: data.frame with one or more variables (time series) where the first variable refers to time.
+#   mdl (model). Default value="linear regression"
+#   m (moving average size). Default value=90
+#   alpha (alpha value). Default value=3 
+#   na.action. Default value="na.omit"
+
 evtdet.changeFinder <- function(data,...){
   if(is.null(data)) stop("No data was provided for computation",call. = FALSE)
 
