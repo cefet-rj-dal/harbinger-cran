@@ -1,12 +1,21 @@
 #==== evtplot: Function for plotting event detection ====
 # The evtplot function is used to plot the detection of events made with one of the available event
 # detection functions. It helps the comprehension the results obtained though the detection, as it 
-# visually shows them.
+# visually shows them. 
+# 
+# Color meanings:
+# Green points: True positives.
+# Blue points: False negatives.
+# Red points: (with reference) False positives 
+#             (without reference) Any event detected
 #
 # input:
 #   data: data.frame with one or more variables (time series) where the first variable refers to time.
 #   events: output from 'evtdet' function regarding a particular times series.
-#   reference: data.frame of the same length as the time series with two variables: time, event (boolean indicating true events)
+#   reference(optional): data.frame of the same length as the time series with two variables: time, 
+#   event (boolean indicating true events).
+#   mark.cp (optional): mark symbol. Same use as R plot function.
+#   ylim (optional): y axis limit. Same use as R plot function.
 #
 # output: 
 #   plotted event detection
