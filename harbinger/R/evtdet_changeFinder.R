@@ -8,10 +8,10 @@
 #
 # input:
 #   data: data.frame with one or more variables (time series) where the first variable refers to time.
-#   mdl (model). Default value="linear regression"
-#   m (moving average size). Default value=90
-#   alpha (alpha value). Default value=3 
-#   na.action. Default value="na.omit"
+#   mdl (model). Default value= "linear regression"
+#   m (moving average size). Default value= 90
+#   alpha (alpha value). Default value= 3 
+#   na.action. Default value= "na.omit"
 
 evtdet.changeFinder <- function(data,...){
   if(is.null(data)) stop("No data was provided for computation",call. = FALSE)
