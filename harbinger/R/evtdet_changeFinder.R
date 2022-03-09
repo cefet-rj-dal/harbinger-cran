@@ -6,12 +6,14 @@
 # second time, a new incremental learning model is adjusted to the new series and a score given using the learned deviance 
 # model.This way, the detection of change points is reduced to the question of finding anomalies in a series.
 #
-# input:
+# general input:
 #   data: data.frame with one or more variables (time series) where the first variable refers to time.
-#   mdl (model). Default value= "linear regression"
-#   m (moving average size). Default value= 90
-#   alpha (alpha value). Default value= 3 
 #   na.action. Default value= "na.omit"
+# method specific input:
+#   mdl (model). Default value= linreg (linear regression)
+#   m (moving average size). Minimum value= 30
+#   alpha (alpha value). Default value= 1.5 
+
 
 evtdet.changeFinder <- function(data,...){
   if(is.null(data)) stop("No data was provided for computation",call. = FALSE)
