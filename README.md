@@ -1,11 +1,7 @@
 # Harbinger Package
-R package that contains the event detection methods, 
-as well as their plotting and evaluation methods, 
-presented in the article "Um framework para integração 
-e análise de métodos de detecção de eventos em séries 
-temporais."
+R package that contains the event detection methods, as well as their plotting and evaluation methods, presented in the article "Um framework para integração e análise de métodos de detecção de eventos em séries temporais."
 
-About • Example • Documentation • Development • Credits • License
+[About](About) • [Example](Example) • [Documentation](Documentation) • [Development](Development) • [Credits](Credits) • [License](License)
 
 cefet
 About
