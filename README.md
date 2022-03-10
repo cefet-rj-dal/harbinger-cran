@@ -41,7 +41,7 @@ print(evtplot(test,events_a, reference))
 
 In this part all the methods are explained in alphabetical order.
 
-[evaluate](https://github.com/cefet-rj-pratica-pesquisa/tema4#evaluate) • [evtdet](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet) • [evtdet_anomalize](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_anomalize) • [evtdet_changeFinder](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_changeFinder) • [evtdet_eventdetect](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_eventdetect) • [evtdet.garch_volatility_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet.garch_volatility_outlier) • [evtdet_mdl_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_mdl_outlier) • [evtdet_otsad](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_otsad) • [evtdet_outliers](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_outliers) •  •
+[evaluate](https://github.com/cefet-rj-pratica-pesquisa/tema4#evaluate) • [evtdet](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet) • [evtdet_anomalize](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_anomalize) • [evtdet_changeFinder](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_changeFinder) • [evtdet_eventdetect](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_eventdetect) • [evtdet.garch_volatility_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_garch_volatility_outlier) • [evtdet_mdl_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_mdl_outlier) • [evtdet_otsad](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_otsad) • [evtdet_outliers](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_outliers) •  •
 
 ## [evaluate](https://github.com/cefet-rj-pratica-pesquisa/tema4#evaluate)
 ````
@@ -125,7 +125,7 @@ In this part all the methods are explained in alphabetical order.
 #   postProcessorControl: Controller of post. Default value = list(nStandardDeviationsEventThreshhold = 5)
 ````
 
-## [evtdet.garch_volatility_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet.garch_volatility_outlier)
+## [evtdet.garch_volatility_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_garch_volatility_outlier)
 ````
 # ==== evtdet.garch_volatility_outlier: Function for event detection  ====
 # The models of the GARCH type consist of the estimation of volatility using knowledge from past observations. 
