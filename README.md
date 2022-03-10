@@ -77,3 +77,40 @@ In this part all the methods are explained.
 #   alpha: alpha value. Default value: 0.05
 #   max_anoms: maximum of anomalies. Default value: 0.2
 ````
+## evtdet_changeFinder
+
+````
+#==== evtdet_changeFinder: Function for event detection  ====
+# This method is composed by two steps: in the first, is the detection of anomalies. The adjustmentof an incremental learning model to 
+# the series occurs. Then, a score is given for every observation occured. This said score is calculated according to its notions of learned model 
+# deviance, based on quadratic errors. Higher scores can be understood as anomalies. Then, in the second and final step, the identification of change
+# points happens. A new time series is then produced, one which consists of the scores' moving average obtained in the first step. Again, a new 
+# incremental learning model is adjusted to the new series and a score given using the learned deviance 
+# model. Through this method, the detection of change points is reduced to the task of finding anomalies inside a series.
+#
+# general input:
+#   data: data.frame with one or more variables (time series) where the first variable refers to time.
+#   na.action. Default value= "na.omit"
+# method specific input:
+#   mdl (model). Default value= linreg (linear regression)
+#   m (moving average size). Minimum value= 30
+#   alpha (alpha value). Default value= 1.5 
+````
+
+This package was made with the use of the following open source projects:
+
+   [R](https://cran.r-project.org/sources.html)
+   • [devtools](https://github.com/r-lib/devtools)
+   • [roxygen2](https://github.com/r-lib/roxygen2)
+
+We would like to thank individually our teacher, Eduardo Ogasawara, for the time and atention, as well as the knowledge given for us during his classes.
+We would also like to thank Janio de Souza Lima, who always showed all interest and passion during his help towards the success of our work.
+
+## License
+
+
+
+   Diogo Conde • [@DiogoConde](https://github.com/DiogoConde)
+   Eduardo Moura • [@EduMoura-debug](https://github.com/EduMoura-debug)
+   Eduardo Ogasawara • [@eogasawara](https://github.com/eogasawara)
+   Janio de Souza Lima• [@janiosl](https://github.com/janiosl)
