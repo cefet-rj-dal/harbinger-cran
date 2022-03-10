@@ -41,7 +41,7 @@ print(evtplot(test,events_a, reference))
 
 In this part all the methods are explained in alphabetical order.
 
-[evaluate](https://github.com/cefet-rj-pratica-pesquisa/tema4#evaluate) • [evtdet](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet) • [evtdet_anomalize](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_anomalize) • [evtdet_changeFinder](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_changeFinder) • [evtdet_eventdetect](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_eventdetect) • [evtdet_garch_volatility_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_garch_volatility_outlier) • [evtdet_mdl_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_mdl_outlier) • [evtdet_otsad](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_otsad) • [evtdet_outliers](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_outliers) •  •
+[evaluate](https://github.com/cefet-rj-pratica-pesquisa/tema4#evaluate) • [evtdet](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet) • [evtdet_anomalize](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_anomalize) • [evtdet_changeFinder](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_changeFinder) • [evtdet_eventdetect](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_eventdetect) • [evtdet_garch_volatility_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_garch_volatility_outlier) • [evtdet_mdl_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_mdl_outlier) • [evtdet_otsad](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_otsad) • [evtdet_outliers](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_outliers) • [evtdet_seminalChangePoint](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_seminalChangePoint) • [evtplot](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtplot)
 
 ## [evaluate](https://github.com/cefet-rj-pratica-pesquisa/tema4#evaluate)
 ````
@@ -179,11 +179,45 @@ In this part all the methods are explained in alphabetical order.
 #   alpha: alpha value. Default value= "1.5"
 ````
 
-## 
+## [evtdet_seminalChangePoint](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_seminalChangePoint)
 ````
-
+# ==== evtdet_seminalChangePoint: Function for event detection  ====
+# For any given point in time, it applies adjustments of models to segments of data around 
+# this given point. After that, the existence of a change point is determined depending on the 
+# quantity of adjustment errors that occur throughout the region. The areas with 
+# most errors are compared with the ones where this rate is the lowest.
+#
+# input:
+#   data: data.frame with one or more variables (time series) where the first variable refers to time.
+#   w (window size). Default value= 100 
+#   alpha: alpha value. Default value= 1.5
+#   na.action. Default value= "na.omit"
 ````
-##Credits
+## [evtplot](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtplot)
+````
+#==== evtplot: Function for plotting event detection ====
+# The evtplot function is used to plot the detection of events made with one of the available event
+# detection functions. It helps the comprehension the results obtained though the detection, as it 
+# visually shows them. 
+# 
+# Color meanings:
+# Green points: True positives.
+# Blue points: False negatives.
+# Red points: (with reference) False positives 
+#             (without reference) Any event detected
+#
+# input:
+#   data: data.frame with one or more variables (time series) where the first variable refers to time.
+#   events: output from 'evtdet' function regarding a particular times series.
+#   reference (optional): data.frame of the same length as the time series with two variables: time, 
+#   event (boolean indicating true events).
+#   mark.cp: (value equals TRUE) displays a dashed vertical line at detected change points. Default value = FALSE.
+#   ylim (optional): y axis limit. Same use as R plot function.
+#
+# output: 
+#   plotted event detection
+````
+## Credits
 
 This package was made with the use of the following open source projects:
 
