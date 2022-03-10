@@ -1,7 +1,7 @@
 # Harbinger Package
 R package that contains the event detection methods, as well as their plotting and evaluation methods, presented in the article "Um framework para integração e análise de métodos de detecção de eventos em séries temporais".
 
-[About](https://github.com/cefet-rj-pratica-pesquisa/tema4#About) • [Example](https://github.com/cefet-rj-pratica-pesquisa/tema4#Example) • [Documentation](https://github.com/cefet-rj-pratica-pesquisa/tema4#Documentation) • [Development](https://github.com/cefet-rj-pratica-pesquisa/tema4#Development) • [Credits](https://github.com/cefet-rj-pratica-pesquisa/tema4#Credits) • [License](https://github.com/cefet-rj-pratica-pesquisa/tema4#!License)
+[About](https://github.com/cefet-rj-pratica-pesquisa/tema4#About) • [Example](https://github.com/cefet-rj-pratica-pesquisa/tema4#Example) • [Documentation](https://github.com/cefet-rj-pratica-pesquisa/tema4#Documentation) • [Development](https://github.com/cefet-rj-pratica-pesquisa/tema4#Development) • [Credits](https://github.com/cefet-rj-pratica-pesquisa/tema4#Credits) • [License](https://github.com/cefet-rj-pratica-pesquisa/tema4#License)
 
 ![cefet](https://user-images.githubusercontent.com/79878761/157667895-d4374249-4d21-46a2-a1f9-aae80bb208dc.jpg)
 
@@ -218,6 +218,8 @@ In this part all the methods are explained in alphabetical order.
 #   plotted event detection
 ````
 ## [Development](https://github.com/cefet-rj-pratica-pesquisa/tema4#Development)
+
+
 
 ## [Credits](https://github.com/cefet-rj-pratica-pesquisa/tema4#Credits)
 
