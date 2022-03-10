@@ -109,7 +109,7 @@ In this part all the methods are explained in alphabetical order.
 #   alpha (alpha value). Default value= 1.5 
 ````
 
-## [evdet_eventdetect](https://github.com/cefet-rj-pratica-pesquisa/tema4#eventdetect)
+## [evtdet_eventdetect](https://github.com/cefet-rj-pratica-pesquisa/tema4#eventdetect)
 ````
 #==== evdet_eventdetect: Function for event detection ====
 #   eventdetect is an event detection method that consists of evaluating a dataframe and marking anomalies in the process, using
@@ -147,7 +147,7 @@ In this part all the methods are explained in alphabetical order.
 #   
 ````
 
-## [evdet_mdl_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_mdl_outlier)
+## [evtdet_mdl_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_mdl_outlier)
 ````
 #==== evdet_mdl_outlier: Function for event detection ====
 # In this outlier (Model Outliers method), the model (mdl) is used as a parameter.
@@ -159,7 +159,7 @@ In this part all the methods are explained in alphabetical order.
 #   alpha: alpha value.
 ````
 
-## [evdet_otsad](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_otsad)
+## [evtdet_otsad](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_otsad)
 ````
 #==== evdet_otsad: Function for event detection ====
 #   Otsad is an events detection method that consists of evaluating a dataframe and mark anomalies for a
@@ -169,7 +169,7 @@ In this part all the methods are explained in alphabetical order.
 #   method: the selected event detection method from the otsad package (Example: "CpPewma")
 ````
 
-## [evdet_outliers](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_outliers)
+## [evtdet_outliers](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_outliers)
 ````
 #==== evdet_outliers: Function for event detection ====
 # Outliers is an event detection method that consists of evaluating a data.frame and mark anomalies
