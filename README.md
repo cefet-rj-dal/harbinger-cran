@@ -1,16 +1,17 @@
 # Harbinger Package
-R package that contains the event detection methods, as well as their plotting and evaluation methods, presented in the article "Um framework para integração e análise de métodos de detecção de eventos em séries temporais."
+R package that contains the event detection methods, as well as their plotting and evaluation methods, presented in the article "Um framework para integração e análise de métodos de detecção de eventos em séries temporais".
 
-[About](About) • [Example](Example) • [Documentation](Documentation) • [Development](Development) • [Credits](Credits) • [License](License)
+[About](https://github.com/cefet-rj-pratica-pesquisa/tema4#About) • [Example](https://github.com/cefet-rj-pratica-pesquisa/tema4#Example) • [Documentation](https://github.com/cefet-rj-pratica-pesquisa/tema4#Documentation) • [Development](https://github.com/cefet-rj-pratica-pesquisa/tema4#Development) • [Credits](https://github.com/cefet-rj-pratica-pesquisa/tema4#Credits) • [License](https://github.com/cefet-rj-pratica-pesquisa/tema4#!License)
 
-cefet
-About
+![cefet](https://user-images.githubusercontent.com/79878761/157667895-d4374249-4d21-46a2-a1f9-aae80bb208dc.jpg)
+
+## [About](https://github.com/cefet-rj-pratica-pesquisa/tema4#About)
 
 This R package was made based in the article "Um framework para integração e análise de métodos de detecção de eventos em séries temporais". Because of this, it focuses on event detection, its methods, plottings and evaluation methods. The R package was Developed at CEFET/RJ for an academic work.
 
 Throughout the following parts of this text, you may be able to study some examples of fundamental methods of the package, the documentation of each method, the steps followed based on the book "R packages" by Hadley Wickham and Jenny Bryan. Please feel free to make contributions and contact in case of bugs or suggestions.
 
-Example
+## [Example](https://github.com/cefet-rj-pratica-pesquisa/tema4#Example)
 
 The following examples are the base methods used for the event detection, plotting, and evaluation of the event detection:
 
@@ -26,7 +27,7 @@ evtdet <- function(data,func,...){
 
 
 
-Documentation
+## [Documentation](https://github.com/cefet-rj-pratica-pesquisa/tema4#Documentation)
 
 In this part all the methods are explained.
 
