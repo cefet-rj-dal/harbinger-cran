@@ -219,7 +219,27 @@ In this part all the methods are explained in alphabetical order.
 ````
 ## [Development](https://github.com/cefet-rj-pratica-pesquisa/tema4#Development)
 
+This Harbinger R package was created upon the reading of the introductory chapters of the book R Packages by. We separated by chapter our most essential learnings, to help the comprehension of our progress and of anyone who creates a package through studying this material:
 
+## 0: Learning about R and packages
+
+To start the development of the package, it was nec3essary to first understand the syntax, environment and workflow of the R language and RStudio, the tool we used to program our package. We obtained this knowledge through teacher Eduardo Ogasawara's video lessons, watching his videos as the first step in this project. 
+
+## 1: Check name availability
+
+As the way through which this and any package is found, the name is one of its most important parts. We used the available() function on RStudio in order to corfirm the availability of the package not only on CRAN, but also through Urban Dictionary, Wikipedia, and other sites, as to know every concept related to the name.
+
+## 2: Understanding the subject
+
+In order to efficiently create a package containing data and methods then unknown to us, we needed an initial contact with the source material, such as the methods themselves, accompained by weekly meetings with professor Ogasawara. We also counted on frequent audio calls and message exchanges with Janio de Souza Lima, who worked closely on the project before our contact and provided unique knowledge for us. Articles and papers written on the project were also of great aid for us, as we understood under which conditions the package was working, and if not, what else was needed in it.
+
+##3: R code
+
+At the point where we already knew the content, we were able to correctly divide the methods into separate archives, get the data used by them, and test the funtioning of the whole project, while also creating the package itself through RStudio and making it available in this repository.
+
+## 4: Documentation
+
+Once all methods were splitted, we individually analyzed all of them in search of general and specific parameters. These parameters, along with an explanation of the method and its output, were described in the file of each method, as we wanted to answer any doubts remaining regarding the content for any reader of this repository.
 
 ## [Credits](https://github.com/cefet-rj-pratica-pesquisa/tema4#Credits)
 
