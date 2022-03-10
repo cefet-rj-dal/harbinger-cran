@@ -7,9 +7,9 @@ R package that contains the event detection methods, as well as their plotting a
 
 ## [About](https://github.com/cefet-rj-pratica-pesquisa/tema4#About)
 
-This R package was made based in the article "Um framework para integração e análise de métodos de detecção de eventos em séries temporais". Because of this, it focuses on event detection, its methods, plottings and evaluation methods. The R package was Developed at CEFET/RJ for an academic work.
+This R package was made based in the article "Um framework para integração e análise de métodos de detecção de eventos em séries temporais". Because of this, it focuses on event detection, its methods, plottings and evaluation methods. The R package was developed at CEFET/RJ for an academic work.
 
-Throughout the following parts of this text, you may be able to study some examples of fundamental methods of the package, the documentation of each method, the steps followed based on the book "R packages" by Hadley Wickham and Jenny Bryan. Please feel free to make contributions and contact in case of bugs or suggestions.
+Throughout the following parts of this text, you may be able to study some examples of fundamental methods of the package, the documentation of each method, the steps followed based on the book [R packages](https://r-pkgs.org/index.html) by Hadley Wickham and Jenny Bryan. Please feel free to make contributions and contact in case of bugs or suggestions.
 
 ## [Example](https://github.com/cefet-rj-pratica-pesquisa/tema4#Example)
 
@@ -217,7 +217,9 @@ In this part all the methods are explained in alphabetical order.
 # output: 
 #   plotted event detection
 ````
-## Credits
+## [Development](https://github.com/cefet-rj-pratica-pesquisa/tema4#Development)
+
+## [Credits](https://github.com/cefet-rj-pratica-pesquisa/tema4#Credits)
 
 This package was made with the use of the following open source projects:
 
@@ -230,11 +232,9 @@ This package was made with the use of the following open source projects:
 We would like to thank individually our teacher, Eduardo Ogasawara, for the time and atention, as well as the knowledge given for us during his classes.
 We would also like to thank Janio de Souza Lima, who always showed all interest and passion during his help towards the success of our work.
 
-## License
+## [License](https://github.com/cefet-rj-pratica-pesquisa/tema4#License)
 
 MIT
-
-## Contributors 
 
    Diogo Conde • [@DiogoConde](https://github.com/DiogoConde)
    Eduardo Moura • [@EduMoura-debug](https://github.com/EduMoura-debug)
