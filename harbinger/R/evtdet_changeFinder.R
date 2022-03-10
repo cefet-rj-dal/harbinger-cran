@@ -1,10 +1,10 @@
 #==== evtdet_changeFinder: Function for event detection  ====
-# In this method, there are two steps: first, the anomalies are detected. An incremental learning model is adjusted to 
-# the series. A score is then given for every observation. The score is calculated through its notions of learned model 
-# deviance, based on quadratic errors. Higher scores mean anomalies. In the second and final step,the change points are 
-# identified. A new time series is produced, consisting of the scores' mobile means obtained in the first step. For the 
-# second time, a new incremental learning model is adjusted to the new series and a score given using the learned deviance 
-# model.This way, the detection of change points is reduced to the question of finding anomalies in a series.
+# This method is composed by two steps: in the first, is the detection of anomalies. The adjustmentof an incremental learning model to 
+# the series occurs. Then, a score is given for every observation occured. This said score is calculated according to its notions of learned model 
+# deviance, based on quadratic errors. Higher scores can be understood as anomalies. Then, in the second and final step, the identification of change
+# points happens. A new time series is then produced, one which consists of the scores' moving average obtained in the first step. Again, a new 
+# incremental learning model is adjusted to the new series and a score given using the learned deviance 
+# model. Through this method, the detection of change points is reduced to the task of finding anomalies inside a series.
 #
 # general input:
 #   data: data.frame with one or more variables (time series) where the first variable refers to time.
