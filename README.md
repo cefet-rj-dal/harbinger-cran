@@ -13,18 +13,28 @@ Throughout the following parts of this text, you may be able to study some examp
 
 ## [Example](https://github.com/cefet-rj-pratica-pesquisa/tema4#Example)
 
-The following examples are the base methods used for the event detection, plotting, and evaluation of the event detection:
-````
-library("harbinger")
+The following examples are some of the methods used for the event detection, in this case anomalize, plotting, and evaluation of the event detection:
+(these codes can also be found in the [usage.R](https://github.com/cefet-rj-pratica-pesquisa/tema4/blob/main/usage.r) file in this repository)
+```
+library(tibble)
+library(EventDetectR)
 
-# evtdet <- function(data,func,...){
-#  if(is.null(data)) stop("No data was provided for computation",call. = FALSE)
-#
-#  events <- do.call(func,c(list(data),list(...)))
-#
-#  return(events)
-# }
-````
+source("https://raw.githubusercontent.com/cefet-rj-dal/harbinger/master/harbinger.R")
+
+#========= Data =========
+# === WATER QUALITY ===
+train <- geccoIC2018Train[16500:18000,]
+test <- subset(train, select=c(Time, Trueb))
+reference <- subset(train, select=c(Time, EVENT))
+
+#====== Anomalize ======
+#Detect
+events_a <- evtdet.anomalize(test,max_anoms=0.2,na.action=na.omit)
+#Evaluate
+evaluate(events_a, reference, metric="confusion_matrix")
+#Plot
+print(evtplot(test,events_a, reference))
+```
 
 
 ## [Documentation](https://github.com/cefet-rj-pratica-pesquisa/tema4#Documentation)
@@ -97,11 +107,29 @@ In this part all the methods are explained.
 #   alpha (alpha value). Default value= 1.5 
 ````
 
+## evdet_eventdetect
+````
+#==== evdet_eventdetect: Function for event detection ====
+#   eventdetect is an event detection method that consists of evaluating a dataframe and marking anomalies in the process, using
+#   implemented algorithms from the EventDetectR package. This package can simulate, detect and classify the data from a time series.
+# input:
+#   data: data.frame with one or more variables (time series) where the first variable refers to time.
+# Not necessary for input:
+#   windowSize: defines the size of the window. Default value = 200
+#   nIterationsRefit: number of interactions. Default value = 150
+#   dataPrepators:  prepares data. Default value = "ImputeTSInterpolation"
+#   buildModelAlgo: model builder. Default value = "ForecastBats"
+#   postProcessors: post processors. Default value = "bedAlgo"
+#   postProcessorControl: Controller of post. Default value = list(nStandardDeviationsEventThreshhold = 5)
+````
+
 This package was made with the use of the following open source projects:
 
    [R](https://cran.r-project.org/sources.html)
    • [devtools](https://github.com/r-lib/devtools)
    • [roxygen2](https://github.com/r-lib/roxygen2)
+   • [testthat](https://github.com/r-lib/testthat)
+   • [knitr](https://github.com/yihui/knitr)
 
 We would like to thank individually our teacher, Eduardo Ogasawara, for the time and atention, as well as the knowledge given for us during his classes.
 We would also like to thank Janio de Souza Lima, who always showed all interest and passion during his help towards the success of our work.
