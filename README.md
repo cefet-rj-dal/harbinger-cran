@@ -41,7 +41,7 @@ print(evtplot(test,events_a, reference))
 
 In this part all the methods are explained in alphabetical order.
 
-[evaluate](https://github.com/cefet-rj-pratica-pesquisa/tema4#evaluate) • [evtdet](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet) • [evtdet_anomalize](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_anomalize) • [evtdet_changeFinder](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_changeFinder) • [evdet_eventdetect](https://github.com/cefet-rj-pratica-pesquisa/tema4#eventdetect) • [evtdet.garch_volatility_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet.garch_volatility_outlier) • [evdet_mdl_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_mdl_outlier) • [evdet_otsad](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_otsad) • [evdet_outliers](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_outliers) •  •
+[evaluate](https://github.com/cefet-rj-pratica-pesquisa/tema4#evaluate) • [evtdet](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet) • [evtdet_anomalize](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_anomalize) • [evtdet_changeFinder](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_changeFinder) • [evdet_eventdetect](https://github.com/cefet-rj-pratica-pesquisa/tema4#eventdetect) • [evtdet.garch_volatility_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet.garch_volatility_outlier) • [evtdet_mdl_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_mdl_outlier) • [evtdet_otsad](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_otsad) • [evtdet_outliers](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_outliers) •  •
 
 ## [evaluate](https://github.com/cefet-rj-pratica-pesquisa/tema4#evaluate)
 ````
@@ -183,6 +183,8 @@ In this part all the methods are explained in alphabetical order.
 ````
 
 ````
+##Credits
+
 This package was made with the use of the following open source projects:
 
    [R](https://cran.r-project.org/sources.html)
@@ -196,7 +198,9 @@ We would also like to thank Janio de Souza Lima, who always showed all interest 
 
 ## License
 
+MIT
 
+## Contributors 
 
    Diogo Conde • [@DiogoConde](https://github.com/DiogoConde)
    Eduardo Moura • [@EduMoura-debug](https://github.com/EduMoura-debug)
