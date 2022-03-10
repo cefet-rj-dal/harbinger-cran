@@ -241,6 +241,14 @@ At the point where we already knew the content, we were able to correctly divide
 
 Once all methods were splitted, we individually analyzed all of them in search of general and specific parameters. These parameters, along with an explanation of the method and its output, were described in the file of each method, as we wanted to answer any doubts remaining regarding the content for any reader of this repository.
 
+## 5: Metadata
+
+This section regards the file DESCRIPTION, containing data about the package itself. Inside this file are data like the title, type, version, authors, maintainer, license used, and the description, which exposes the general objetive of the project. In our case, it is the event detection given a dataframe and visualization and evaluation of this detection.
+
+## 6: Checking
+
+An essential part of the package is its testing. With it we can be assured that all methods and uses described of it are true and working accordingly. The testing is best done during all of the package steps, for the easier recognition of specific errors, their causes and solutions. A final test is required as the concluding confirmation of the efficiency of the package and its capability of publishing.
+
 ## [Credits](https://github.com/cefet-rj-pratica-pesquisa/tema4#Credits)
 
 This package was made with the use of the following open source projects:
