@@ -39,9 +39,11 @@ print(evtplot(test,events_a, reference))
 
 ## [Documentation](https://github.com/cefet-rj-pratica-pesquisa/tema4#Documentation)
 
-In this part all the methods are explained.
+In this part all the methods are explained in alphabetical order.
 
-## evaluate
+[evaluate](https://github.com/cefet-rj-pratica-pesquisa/tema4#evaluate) • [evtdet](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet) • [evtdet_anomalize](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_anomalize) • [evtdet_changeFinder](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_changeFinder) • [evdet_eventdetect](https://github.com/cefet-rj-pratica-pesquisa/tema4#eventdetect) • [evtdet.garch_volatility_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet.garch_volatility_outlier) • [evdet_mdl_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_mdl_outlier) • [evdet_otsad](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_otsad) • [evdet_outliers](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_outliers) •  •
+
+## [evaluate](https://github.com/cefet-rj-pratica-pesquisa/tema4#evaluate)
 ````
 #==== evaluate: Function for evaluating quality of event detection ====
 # The evaluate function uses a diverse number of metrics for the analysis of the quality of the many event detection methods. 
@@ -60,7 +62,7 @@ In this part all the methods are explained.
 #   calculated metric value.
 ````
 
-## evtdet
+## [evtdet](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet)
 ````
 #==== evtdet: Function for event detection ====
 # input:
@@ -72,7 +74,7 @@ In this part all the methods are explained.
 #   data.frame with three variables: time (events time/indexes), serie (corresponding time serie), type (event type).
 ````
 
-## evtdet_anomalize
+## [evtdet_anomalize](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_anomalize)
 ````
 #==== evdet_anomalize: Function for event detection  ====
 # Anomalize is an event detection method that consists of evaluating and marking anomalies,
@@ -87,7 +89,7 @@ In this part all the methods are explained.
 #   alpha: alpha value. Default value: 0.05
 #   max_anoms: maximum of anomalies. Default value: 0.2
 ````
-## evtdet_changeFinder
+## [evtdet_changeFinder](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_changeFinder)
 
 ````
 #==== evtdet_changeFinder: Function for event detection  ====
@@ -107,7 +109,7 @@ In this part all the methods are explained.
 #   alpha (alpha value). Default value= 1.5 
 ````
 
-## evdet_eventdetect
+## [evdet_eventdetect](https://github.com/cefet-rj-pratica-pesquisa/tema4#eventdetect)
 ````
 #==== evdet_eventdetect: Function for event detection ====
 #   eventdetect is an event detection method that consists of evaluating a dataframe and marking anomalies in the process, using
@@ -123,6 +125,64 @@ In this part all the methods are explained.
 #   postProcessorControl: Controller of post. Default value = list(nStandardDeviationsEventThreshhold = 5)
 ````
 
+## [evtdet.garch_volatility_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet.garch_volatility_outlier)
+````
+# ==== evtdet.garch_volatility_outlier: Function for event detection  ====
+# The models of the GARCH type consist of the estimation of volatility using knowledge from past observations. 
+# They are a non-linear time series model that are used to treat the non-linearity of data. They can then be 
+# used to study the volatility of time series.
+#
+# general input:
+#   data: data.frame with one or more variables (time series) where the first variable refers to time.
+#   na.action. Default value= "na.omit"
+# method specific input:
+#   alpha: alpha value. Default value= 1.5  
+#   spec (specifications):
+#      distribution.model: conditional density model. Default value= "norm" (normal distribution)
+#      variance.model. Default value for model = "sGARCH"
+#                      Default value for garchOrder = (1, 1)
+#      mean.model. Default value for include.mean = "TRUE"
+#                  Default value:armaOrder = (1, 1)
+#                  Default value:include.mean = "TRUE"
+#   
+````
+
+## [evdet_mdl_outlier](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_mdl_outlier)
+````
+#==== evdet_mdl_outlier: Function for event detection ====
+# In this outlier (Model Outliers method), the model (mdl) is used as a parameter.
+# The value of this parameter is a linear regression. In general, this method helps to
+# find divergence points using outliers which can be treated as anomalies.
+# input:
+#   data: data.frame with one or more variables (time series) where the first variable refers to time.
+#   mdl: model.
+#   alpha: alpha value.
+````
+
+## [evdet_otsad](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_otsad)
+````
+#==== evdet_otsad: Function for event detection ====
+#   Otsad is an events detection method that consists of evaluating a dataframe and mark anomalies for a
+#   time series, implementing some flaws detector algorithms from the otsad package
+# input:
+#   data: data.frame with one or more variables (time series) where the first variable refers to time.
+#   method: the selected event detection method from the otsad package (Example: "CpPewma")
+````
+
+## [evdet_outliers](https://github.com/cefet-rj-pratica-pesquisa/tema4#evtdet_outliers)
+````
+#==== evdet_outliers: Function for event detection ====
+# Outliers is an event detection method that consists of evaluating a data.frame and mark anomalies
+# basing itself in comparisons between the values of the data.frame.
+# input:
+#   data: data.frame with one or more variables (time series) where the first variable refers to time.
+#   alpha: alpha value. Default value= "1.5"
+````
+
+## 
+````
+
+````
 This package was made with the use of the following open source projects:
 
    [R](https://cran.r-project.org/sources.html)
