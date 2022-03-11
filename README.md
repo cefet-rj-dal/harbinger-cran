@@ -35,7 +35,7 @@ evaluate(events_a, reference, metric="confusion_matrix")
 #Plot
 print(evtplot(test,events_a, reference))
 ```
-
+During your use of this package, you will find some methods, such as the evt.delgarch_volatility_outlier, require some auxuliary models in order to function properly. These models can be found in the [harbinger_auxiliary_models.r](https://github.com/cefet-rj-pratica-pesquisa/tema4/blob/main/harbinger_auxiliary_models.r) file inside this repository.
 
 ## [Documentation](https://github.com/cefet-rj-pratica-pesquisa/tema4#Documentation)
 
